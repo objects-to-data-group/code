@@ -33,7 +33,7 @@ This script will;
 
   - open the browser and show the datasets;
 
-  - a directory on your desktop with the name "nytimesdatasets";
+  - create a directory on your desktop with the name "nytimesdatasets";
 
   - then download the existing N.Y. Times datasets located at http://cleverdon.hum.uva.nl/marijn/OtD/nytimes/ ;
 
