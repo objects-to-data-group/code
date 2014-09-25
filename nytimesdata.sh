@@ -29,7 +29,7 @@ Script Name: '$SCRIPT'
 Purpose: '$PURPOSE'
 Version '$VERSION'
 
-This script will create;
+This script will;
 
   - open the browser and show the datasets;
 
