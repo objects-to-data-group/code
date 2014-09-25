@@ -17,7 +17,7 @@ This script will perform different actions needed to accomplish it's goal. (wow,
   * no if statements;
   * no getopts;
   * many others...
-* Because of these problems somewhere in the world a kitten dies.
+* Because of these problems somewhere in the world [a kitten dies](http://www.simonlovell.co.uk/wp-content/uploads/2013/02/save-kitten.jpg).
 
 ## Authors
 * S. Bergmans
