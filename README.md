@@ -57,11 +57,11 @@ Can someone figure out a way to show the results for each decade automatically?
 
 While introducing our research question during the class on Wednessday the 24th of September doubts where raised by fellow students whether the explanation to our research question could not simply be found in a change of labeling the articles. In other words, could it be that after the 1990's the 'Front Page' simple ceased to excist as a possible 'type of material' within the databse. Together with Marijn we thus searched for ways in which we could request information about the total-number of Front Page articles from the API. Via the console this did not seem possible. However, after a lot of mangling and many trial-and-errors the group managed to form a script that was able to draw the required information directly from the API. Unfortunately the script seems to confirm the suspicions raised in class. The results from the script are as follows:
 
-Total news-items in database: 14767872
-Total front-page articles in database: 795315
-Total news-items in database within the 1850's: 152761
-Total front-page articles in database within the 1850's: 34141
-Total news-items in database from the 1990's until 2013: 2517342
+Total news-items in database: 14767872  
+Total front-page articles in database: 795315  
+Total news-items in database within the 1850's: 152761  
+Total front-page articles in database within the 1850's: 34141  
+Total news-items in database from the 1990's until 2013: 2517342  
 Total front-page articles in database from the 1990'suntil 2013: 0
 
 This seems to confirm the fact that the label of 'Front-Page' ceased to excist in the 'Type of material' field. Future research will have to point out whether it changed to another label and/or field. Once that is done, we can look at the renewed number of Humanities front page articles and find out if (possibly percentage-wise) the development still shows possibly interesting hick-ups. If not, we may need to look for another research question. 
