@@ -30,7 +30,7 @@ View `required-scrips.md` in this repository to see an oversight of the sub-ques
   * (The directory is named `newyorktimesdatasets` and should be located on your Desktop.)
 * open Terminal and point the path towards the directory that contains the scripts (User/Desktop/newyorktimesdatasets);
 * type `chmod +x script1.sh` or `chmod +x script2.sh` and hit the `Enter` key;
-* type `./script1.sh` or `./script1.sh` and hit the `Enter` key;
+* type `./script1.sh` or `./script2.sh` and hit the `Enter` key;
 * the script you choose will run and do it's thing.
 
 ## Script 1
