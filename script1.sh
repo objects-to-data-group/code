@@ -14,12 +14,18 @@ field2="type_of_material"
 # Enter a query to be searched for within the second field
 search_field2="Front+Page"
 # The following lines allow you to select a single decade (someone has an idea on how to extract multiple decades one by one automaticaly?)
-begin_date_year="2000"
+begin_date_year="1850"
 begin_date_month="01"
 begin_date_day="01"
-end_date_year="2013"
+end_date_year="1859"
 end_date_month="12"
 end_date_day="31"
+begin_date_year2="1990"
+begin_date_month2="01"
+begin_date_day2="01"
+end_date_year2="2013"
+end_date_month2="12"
+end_date_day2="31"
 # Since the first results immediately show the total number of hits we only need page 0
 page=0
 
@@ -48,7 +54,7 @@ requestUrl3="$baseurl?fq=$field:(%22$search_field%22)&begin_date=$begin_date_yea
 results3=`curl -s $requestUrl3 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 
 # Display the third results
-echo "Total news-items in database within the 2000's:" $results3
+echo "Total news-items in database within the 1850's:" $results3
 
 # Build a fourth URL (this could be changed later so that all information is retrieved via a single URL and the retrieved decades change automatically)
 requestUrl4="$baseurl?fq=$field2:(%22$search_field2%22)&begin_date=$begin_date_year$begin_date_month$begin_date_day&end_date=$end_date_year$end_date_month$end_date_day&api-key=$key&page=$page"
@@ -57,4 +63,22 @@ requestUrl4="$baseurl?fq=$field2:(%22$search_field2%22)&begin_date=$begin_date_y
 results4=`curl -s $requestUrl4 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 
 # Display the fourth results
-echo "Total front-page articles in database within the 2000's:" $results4
+echo "Total front-page articles in database within the 1850's:" $results4
+
+# Build a fifth URL 
+requestUrl5="$baseurl?fq=$field:(%22$search_field%22)&begin_date=$begin_date_year2$begin_date_month2$begin_date_day2&end_date=$end_date_year2$end_date_month2$end_date_day2&api-key=$key&page=$page"
+
+# Filter the number of hits from the 5th results
+results5=`curl -s $requestUrl5 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
+
+# Display the fifth results
+echo "Total news-items in database from the 1990's until 2013:" $results5
+
+# Build a six'th URL 
+requestUrl6="$baseurl?fq=$field2:(%22$search_field2%22)&begin_date=$begin_date_year2$begin_date_month2$begin_date_day2&end_date=$end_date_year2$end_date_month2$end_date_day2&api-key=$key&page=$page"
+
+# Filter the number of hits from the 6th results
+results6=`curl -s $requestUrl6 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
+
+# Display the six'th results
+echo "Total front-page articles in database from the 1990'suntil 2013:" $results6
