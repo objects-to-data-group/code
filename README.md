@@ -27,7 +27,7 @@ View `required-scrips.md` in this repository to see an oversight of the sub-ques
 
 ## How to run `script1.sh` and `script2.sh`
 * place the scripts (`script1.sh` and `script2.sh`) in the directory that's created by `nytimesdata.sh`;
-  * (The directoryname name is `newyorktimesdatasets` and should be located on your Desktop.)
+  * (The directory named `newyorktimesdatasets` and should be located on your Desktop.)
 * open Terminal and point the path towards the directory that contains the scripts (User/Desktop/newyorktimesdatasets);
 * type `chmod +x script1.sh` or `chmod +x script2.sh` and hit the `Enter` key;
 * type `./script1.sh` or `./script1.sh` and hit the `Enter` key;
