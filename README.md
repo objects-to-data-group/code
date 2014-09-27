@@ -19,6 +19,14 @@ This script will perform different actions needed to accomplish it's goal. (wow,
   * many others...
 * Because of these problems somewhere in the world [a kitten dies](http://www.simonlovell.co.uk/wp-content/uploads/2013/02/save-kitten.jpg).
 
+## How to run `script1.sh` and `script2.sh`
+* place it in the directory that's created by `nytimesdata.sh`;
+  * (The directoryname name is `newyorktimesdatasets` and should be located on your Desktop.)
+* open Terminal and point the path towards the directory that contains the scripts (User/Desktop/newyorktimesdatasets);
+* type `chmod +x script1.sh` or `chmod +x script2.sh` and hit the `Enter` key;
+* type `./script1.sh` or `./script1.sh` and hit the `Enter` key;
+* the script you choose will run and do it's thing.
+
 ## Authors
 * S. Bergmans
 * J. Lam
