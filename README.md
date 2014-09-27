@@ -19,6 +19,12 @@ This script will perform different actions needed to accomplish it's goal. (wow,
   * many others...
 * Because of these problems somewhere in the world [a kitten dies](http://www.simonlovell.co.uk/wp-content/uploads/2013/02/save-kitten.jpg).
 
+# About the Sub-scripts
+
+Partial scripts (`script1.sh` and `script2.sh`) that tackle sub-questions of our research.
+
+View `required-scrips.md` in this repository to see an oversight of the sub-questions that have, thus far, been established.
+
 ## How to run `script1.sh` and `script2.sh`
 * place it in the directory that's created by `nytimesdata.sh`;
   * (The directoryname name is `newyorktimesdatasets` and should be located on your Desktop.)
@@ -26,19 +32,6 @@ This script will perform different actions needed to accomplish it's goal. (wow,
 * type `chmod +x script1.sh` or `chmod +x script2.sh` and hit the `Enter` key;
 * type `./script1.sh` or `./script1.sh` and hit the `Enter` key;
 * the script you choose will run and do it's thing.
-
-## Authors
-* S. Bergmans
-* J. Lam
-* W. Nanninga
-* C. Sleutel
-* S. Wisselink
-
-# About the Sub-scripts
-
-Partial scripts that tackle sub-questions of our research.
-
-View `required-scrips.md` in this repository to see an oversight of the sub-questions that have, thus far, been established.
 
 ## Script 1
 
@@ -75,3 +68,10 @@ The results are printed beneath the explanation-line by pasting the two previous
 * Developments needed:
 
 Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
+
+## Authors
+* S. Bergmans
+* J. Lam
+* W. Nanninga
+* C. Sleutel
+* S. Wisselink
