@@ -26,7 +26,7 @@ Partial scripts (`script1.sh` and `script2.sh`) that tackle sub-questions of our
 View `required-scrips.md` in this repository to see an oversight of the sub-questions that have, thus far, been established.
 
 ## How to run `script1.sh` and `script2.sh`
-* place it in the directory that's created by `nytimesdata.sh`;
+* place the scripts (`script1.sh` and `script2.sh`) in the directory that's created by `nytimesdata.sh`;
   * (The directoryname name is `newyorktimesdatasets` and should be located on your Desktop.)
 * open Terminal and point the path towards the directory that contains the scripts (User/Desktop/newyorktimesdatasets);
 * type `chmod +x script1.sh` or `chmod +x script2.sh` and hit the `Enter` key;
