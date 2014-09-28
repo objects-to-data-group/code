@@ -11,7 +11,7 @@ This script will perform different actions needed to accomplish it's goal. (wow,
 * type `./nytimesdata.sh` and hit the `Enter` key;
 * the script will run and do it's thing.
 
-## Issues
+### Issues
 * Several issues that need addressing;
   * script exits when the directory exists;
   * no if statements;
@@ -37,34 +37,34 @@ View `required-scrips.md` in this repository to see an oversight of the sub-ques
 
 This script draws information from the NY-Times article-search API. 
 
-It defines the total number of news-items kept within the dataset that is attached to the API. 
+* It defines the total number of news-items kept within the dataset that is attached to the API. 
 
-It defines the total number of front-page articles kept within the dataset that is attached to the API. 
+* It defines the total number of front-page articles kept within the dataset that is attached to the API. 
 
-It defines the total number of 2000's news-items kept within the dataset that is attached to the API. 
+* It defines the total number of 2000's news-items kept within the dataset that is attached to the API. 
 
-It defines the total number of 2000's front-page articles kept within the dataset that is attached to the API. 
+* It defines the total number of 2000's front-page articles kept within the dataset that is attached to the API. 
 
-It prints the results into the command-line interface. 
+* It prints the results into the command-line interface. 
 
-* Developments needed: 
+### Developments needed: 
 
 Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
 
 Can someone figure out a way to show the results for each decade automatically?
 
-* Preliminary findings due to Script 1:
+## Preliminary findings due to Script 1:
 
 While introducing our research question during the class on Wednessday the 24th of September, doubts where raised by fellow students whether the explanation to our research question could not simply be found in a change of labeling the articles. In other words, could it be that after the 1990's the 'Front Page' simple ceased to excist as a possible 'type of material' within the databse. Together with Marijn we thus searched for ways in which we could request information about the total-number of Front Page articles from the API. Via the console this did not seem possible. However, after a lot of mangling and many trial-and-errors the group managed to form a script that was able to draw the required information directly from the API. Unfortunately the script seems to confirm the suspicions raised during the class session. 
 
 The results from the script are as follows:
 
-Total news-items in database: 14767872  
-Total front-page articles in database: 795315  
-Total news-items in database within the 1850's: 152761  
-Total front-page articles in database within the 1850's: 34141  
-Total news-items in database from the 1990's until 2013: 2517342  
-Total front-page articles in database from the 1990's until 2013: 0
+* Total news-items in database: 14767872  
+* Total front-page articles in database: 795315  
+* Total news-items in database within the 1850's: 152761  
+* Total front-page articles in database within the 1850's: 34141  
+* Total news-items in database from the 1990's until 2013: 2517342  
+* Total front-page articles in database from the 1990's until 2013: 0
 
 This seems to confirm the fact that the label of 'Front-Page' ceased to excist in the 'Type of material' field. Future research will have to point out whether it changed to another label and/or field. Once that is done, we can look at the renewed number of Humanities front page articles and find out if (possibly percentage-wise) the development still shows possibly interesting hick-ups. If not, we may need to look for another research question. 
 
@@ -81,7 +81,7 @@ An `echo-line prints` an explanation-line to lable the retrieved data.
 
 The results are printed beneath the explanation-line by pasting the two previously created text-files. 
 
-* Developments needed:
+### Developments needed:
 
 Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
 
