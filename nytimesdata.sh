@@ -10,7 +10,7 @@
 # Course : Culturele Informatiewetenschap (Media & Informatie)
 # Subject : From Objects to Data
 # Teacher : dr. M.A. Koolen
-# Studieguide no. : 118210106Y
+# Studyguide no. : 118210106Y
 # Academic year : 2014 - 2015
 #------------------------------------------------------------------------------#
 # Authors : S. Bergmans, J. Lam, S. Wisselink, C. Sleutel and W. Nanninga
