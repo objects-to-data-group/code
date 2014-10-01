@@ -1,6 +1,8 @@
 # Enter Base URL 
 baseurl="http://api.nytimes.com/svc/search/v2/articlesearch.json"
 
+#test
+
 # Enter API key"
 key="enter your own key here"
 # Establish a query --> since we want to see all articles no specific query is established, this field, at this moment, has no function in this script.
