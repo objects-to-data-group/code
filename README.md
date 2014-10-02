@@ -83,6 +83,45 @@ The results are printed beneath the explanation-line by pasting the two previous
 
 Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
 
+## Script 3
+
+Used to sort out how many DH front-page articles where published each month from 1850 to 2013, divided into months. (So, the total amount of DH front-page articles published between 1850 & 2013 in January, February, etc.) This is to find out wheter certain months are more likely to future Digital Humanities articles then other. 
+
+* Developments needed: 
+
+- another column showing a comparishment with the total number of front-page articles, divided per month, in the entire API-database
+- a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
+
+## Script 4 
+
+Used to sort out how many DH front-page articles were published each month from 1850 to 2013, divided into decades (So, the total amount of DH front-page articles published in January, February, etc. during each decade).  
+
+* Developments needed: 
+
+- another column showing a comparishment with the total number of front-page articles published each month, divided by decade, in the entire API-database. 
+- a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
+- right now, in the complete overview that is being printed into the command line interface, months that know no first-page DH article aren't shown. It would offer a more neat view if they where icluded showing a value of "0" c.q. zero
+
+## Script 5
+
+Idem to script 4, only the results are divided into years. (So, the total amount of DH front-page articles published in January, February, etc. during each year)
+
+- another column showing a comparishment with the total number of front-page articles published each month, divided by decade, in the entire API-database. 
+- a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
+- right now, in the complete overview that is being printed into the command line interface, months that know no first-page DH article aren't shown. It would offer a more neat view if they where icluded showing a value of "0" c.q. zero
+
+## Script 6
+
+This script is very much a work in progress. It's ultimate goal is to be able to place a specific day (e.g. monday, tuesday, etc.) to a sepcific date (e.g. 12 jan 1906). To do this, the script currently is able to label all dates in january, during the entire span of the database (1850-2013), as monday, tuesday, etc. It retrieves this information from a calander that is activited in the command line interface using NCAL. It is also able to retrieve all dates of May during the entire span of the database (1850-2013). The other months will require more scripting to be done. 
+
+The resulting output files could later be used to retrieve the day (e.g. monday, tuesday, etc.) of any given date (e.g. 12 jan 1906). 
+
+Developments needed:
+
+- 10 more months to program into the script
+- extend the script so it is able to read the time-stamp of the CSV datafile from Objects to Data and directly reply with naming the day (e.g. monday, tuesday, etc.) 
+
+
 ## Authors
 * S. Bergmans
 * J. Lam
