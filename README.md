@@ -89,28 +89,30 @@ Instead of the total number of ALL news-items it should rule out blogs, since th
 
 Used to sort out how many DH front-page articles where published each month from 1850 to 2013, divided into months. (So, the total amount of DH front-page articles published between 1850 & 2013 in January, February, etc.) This is to find out wheter certain months are more likely to future Digital Humanities articles then other. 
 
-* Developments needed: 
+### Developments needed: 
 
-- another column showing a comparishment with the total number of front-page articles, divided per month, in the entire API-database
-- a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
+* another column showing a comparishment with the total number of front-page articles, divided per month, in the entire API-database
+* a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
 
 ## Script 4 
 
 Used to sort out how many DH front-page articles were published each month from 1850 to 2013, divided into decades (So, the total amount of DH front-page articles published in January, February, etc. during each decade).  
 
-* Developments needed: 
+### Developments needed: 
 
-- another column showing a comparishment with the total number of front-page articles published each month, divided by decade, in the entire API-database. 
-- a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
-- right now, in the complete overview that is being printed into the command line interface, months that know no first-page DH article aren't shown. It would offer a more neat view if they where icluded showing a value of "0" c.q. zero
+* another column showing a comparishment with the total number of front-page articles published each month, divided by decade, in the entire API-database. 
+* a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
+* right now, in the complete overview that is being printed into the command line interface, months that know no first-page DH article aren't shown. It would offer a more neat view if they where icluded showing a value of "0" c.q. zero
 
 ## Script 5
 
 Idem to script 4, only the results are divided into years. (So, the total amount of DH front-page articles published in January, February, etc. during each year)
 
-- another column showing a comparishment with the total number of front-page articles published each month, divided by decade, in the entire API-database. 
-- a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
-- right now, in the complete overview that is being printed into the command line interface, months that know no first-page DH article aren't shown. It would offer a more neat view if they where icluded showing a value of "0" c.q. zero
+### Developments needed:
+
+* another column showing a comparishment with the total number of front-page articles published each month, divided by decade, in the entire API-database. 
+* a column that shows whether that divide is, or is not, comparable. If not, we may need to find out why. 
+* right now, in the complete overview that is being printed into the command line interface, months that know no first-page DH article aren't shown. It would offer a more neat view if they where icluded showing a value of "0" c.q. zero
 
 ## Script 6
 
@@ -118,10 +120,10 @@ This script is very much a work in progress. It's ultimate goal is to be able to
 
 The resulting output files could later be used to retrieve the day (e.g. monday, tuesday, etc.) of any given date (e.g. 12 jan 1906). 
 
-Developments needed:
+### Developments needed:
 
-- 10 more months to program into the script
-- extend the script so it is able to read the time-stamp of the CSV datafile from Objects to Data and directly reply with naming the day (e.g. monday, tuesday, etc.) 
+* 10 more months to program into the script
+* extend the script so it is able to read the time-stamp of the CSV datafile from Objects to Data and directly reply with naming the day (e.g. monday, tuesday, etc.) 
 
 
 ## Authors
