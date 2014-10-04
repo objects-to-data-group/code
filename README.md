@@ -85,6 +85,12 @@ The results are printed beneath the explanation-line by pasting the two previous
 
 Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
 
+## Script 2_2 MAC OSX
+
+Does the same as Script2_2 only compatible with the version of SED that is installed on MAX OSX. 
+
+This to prevent the error: "more than one number or 'g' in substitute flags"
+
 ## Script 2_3 MAC OSX
 
 Does the same as Script2_3 only compatible with the version of SED that is installed on MAX OSX. 
