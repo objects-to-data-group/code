@@ -91,11 +91,15 @@ Does the same as Script2_2 only compatible with the version of SED that is insta
 
 This to prevent the error: "more than one number or 'g' in substitute flags"
 
+Also, the AWK command had been extended so that the precentage column also shows percentage signs when the script is run on MAC. The "printf" statement also seems to perform differently on Win & Mac
+
 ## Script 2_3 MAC OSX
 
 Does the same as Script2_3 only compatible with the version of SED that is installed on MAX OSX. 
 
 This to prevent the error: "more than one number or 'g' in substitute flags"
+
+Also, the AWK command had been extended so that the precentage column also shows percentage signs when the script is run on MAC. The "printf" statement also seems to perform differently on Win & Mac
 
 ## Script 3
 
