@@ -71,35 +71,29 @@ This seems to confirm the fact that the label of 'Front-Page' ceased to excist i
 
 ## Script 2
 
-This script creates 2 textfiles: 
+This script creates several textfiles: 
 
 The first textfile encapsulates the total number of news-items within the pre-defined NY-Times dataset that have "The New York Times" listed as a source. It counts these articles per decade. 
 
-The second textfile encapsulates the total number of front-page articles within the pre-defined NY-Times dataset that have "The New York Times" listed as a source. It should be noted that all front-page articles within the pre-defined dataset have "The New York Times" listed as a source, so no specific filter is applied for this. It counts the articles per decade. 
+The second textfile encapsulates the total number of front-page articles within the pre-defined NY-Times dataset that have "The New York Times" listed as a source. It should be noted that all front-page articles within the pre-defined dataset have "The New York Times" listed as a source, so no specific filter is applied for this. It counts the articles per decade.
+
+These two text files are then combined in a new text file to make it possible to calculate the percentage of front-page articles per decade. These percentages are stored in a new text file.
 
 An `echo-line prints` an explanation-line to lable the retrieved data. 
 
-The results are printed beneath the explanation-line by pasting the two previously created text-files. 
+The results are printed beneath the explanation-line by pasting the previously created text-files. 
 
 ### Developments needed:
 
 Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
 
-## Script 2_2 MAC OSX
+## Script 2_2
 
-Does the same as Script2_2 only compatible with the version of SED that is installed on MAX OSX. 
+Does the same as script 2, but selects months instead of decades. These results are ordered per month, with no regard to the year, so the result will have 12 lines.
 
-This to prevent the error: "more than one number or 'g' in substitute flags"
+## Script 2_3
 
-Also, the AWK command had been extended so that the precentage column also shows percentage signs when the script is run on MAC. The "printf" statement also seems to perform differently on Win & Mac
-
-## Script 2_3 MAC OSX
-
-Does the same as Script2_3 only compatible with the version of SED that is installed on MAX OSX. 
-
-This to prevent the error: "more than one number or 'g' in substitute flags"
-
-Also, the AWK command had been extended so that the precentage column also shows percentage signs when the script is run on MAC. The "printf" statement also seems to perform differently on Win & Mac
+Does the same as script 2, but selects days of the month instead of decades. These results are ordered per day, with no regard to month or year, so the result will have 31 lines.
 
 ## Script 3
 
