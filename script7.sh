@@ -68,7 +68,7 @@ results2=`curl -s $requestUrl2 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in database: " '\t' $results2  '\n'
 
 # Build a third URL 
-requestUrl3="$baseurl?begin_date=$begin_date_year$begin_date_month$begin_date_day&end_date=$end_date_year$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl3="$baseurl?begin_date=$begin_date_year$begin_date_month$begin_date_day&end_date=$end_date_year$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 
 # Filter the number of hits from the 3rd results
 results1850h=`curl -s $requestUrl3 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
@@ -77,7 +77,7 @@ results1850h=`curl -s $requestUrl3 | awk -F ':' '{print $4}' | sed -E 's/,"time"
 echo -e $query1 "articles in the 1850's:" '\t' $results1850h
 
 # Build a fourth URL
-requestUrl4="$baseurl?begin_date=$begin_date_year$begin_date_month$begin_date_day&end_date=$end_date_year$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl4="$baseurl?begin_date=$begin_date_year$begin_date_month$begin_date_day&end_date=$end_date_year$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 
 # Filter the number of hits from the 4th results
 results1850s=`curl -s $requestUrl4 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
@@ -86,137 +86,137 @@ results1850s=`curl -s $requestUrl4 | awk -F ':' '{print $4}' | sed -E 's/,"time"
 echo -e $query2 "articles in the 1850's:" '\t' $results1850s '\n'
 
 # 1860's 
-requestUrl5="$baseurl?begin_date=$begin_date_year2$begin_date_month$begin_date_day&end_date=$end_date_year2$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl5="$baseurl?begin_date=$begin_date_year2$begin_date_month$begin_date_day&end_date=$end_date_year2$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1860h=`curl -s $requestUrl5 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1860's:" '\t' $results1860h
 
-requestUrl6="$baseurl?begin_date=$begin_date_year2$begin_date_month$begin_date_day&end_date=$end_date_year2$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl6="$baseurl?begin_date=$begin_date_year2$begin_date_month$begin_date_day&end_date=$end_date_year2$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1860s=`curl -s $requestUrl6 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1860's:" '\t' $results1860s  '\n'
 
 # 1870's 
-requestUrl7="$baseurl?begin_date=$begin_date_year3$begin_date_month$begin_date_day&end_date=$end_date_year3$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl7="$baseurl?begin_date=$begin_date_year3$begin_date_month$begin_date_day&end_date=$end_date_year3$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1870h=`curl -s $requestUrl7 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1870's:" '\t' $results1870h
 
-requestUrl8="$baseurl?begin_date=$begin_date_year3$begin_date_month$begin_date_day&end_date=$end_date_year3$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl8="$baseurl?begin_date=$begin_date_year3$begin_date_month$begin_date_day&end_date=$end_date_year3$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1870s=`curl -s $requestUrl8 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1870's:" '\t' $results1870s  '\n'
 
 # 1880's 
-requestUrl9="$baseurl?begin_date=$begin_date_year4$begin_date_month$begin_date_day&end_date=$end_date_year4$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year4$begin_date_month$begin_date_day&end_date=$end_date_year4$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1880h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1880's:" '\t' $results1880h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year4$begin_date_month$begin_date_day&end_date=$end_date_year4$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year4$begin_date_month$begin_date_day&end_date=$end_date_year4$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1880s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1880's:" '\t' $results1880s  '\n'
 
 # 1890's 
-requestUrl9="$baseurl?begin_date=$begin_date_year5$begin_date_month$begin_date_day&end_date=$end_date_year5$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year5$begin_date_month$begin_date_day&end_date=$end_date_year5$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1890h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1890's:" '\t' $results1890h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year5$begin_date_month$begin_date_day&end_date=$end_date_year5$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year5$begin_date_month$begin_date_day&end_date=$end_date_year5$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1890s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1890's:" '\t' $results1890s  '\n'
 
 # 1900's 
-requestUrl9="$baseurl?begin_date=$begin_date_year6$begin_date_month$begin_date_day&end_date=$end_date_year6$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year6$begin_date_month$begin_date_day&end_date=$end_date_year6$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1900h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1900's:" '\t' $results1900h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year6$begin_date_month$begin_date_day&end_date=$end_date_year6$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year6$begin_date_month$begin_date_day&end_date=$end_date_year6$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1900s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1900's:" '\t' $results1900s  '\n'
 
 # 1910's 
-requestUrl9="$baseurl?begin_date=$begin_date_year7$begin_date_month$begin_date_day&end_date=$end_date_year7$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year7$begin_date_month$begin_date_day&end_date=$end_date_year7$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1910h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1910's:" '\t' $results1910h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year7$begin_date_month$begin_date_day&end_date=$end_date_year7$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year7$begin_date_month$begin_date_day&end_date=$end_date_year7$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1910s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1910's:" '\t' $results1910s  '\n'
 
 # 1920's 
-requestUrl9="$baseurl?begin_date=$begin_date_year8$begin_date_month$begin_date_day&end_date=$end_date_year8$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year8$begin_date_month$begin_date_day&end_date=$end_date_year8$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1920h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1920's:" '\t' $results1920h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year8$begin_date_month$begin_date_day&end_date=$end_date_year8$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year8$begin_date_month$begin_date_day&end_date=$end_date_year8$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1920s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1920's:" '\t' $results1920s  '\n'
 
 # 1930's 
-requestUrl9="$baseurl?begin_date=$begin_date_year9$begin_date_month$begin_date_day&end_date=$end_date_year9$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year9$begin_date_month$begin_date_day&end_date=$end_date_year9$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1930h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1930's:" '\t' $results1930h                                            
 
-requestUrl10="$baseurl?begin_date=$begin_date_year9$begin_date_month$begin_date_day&end_date=$end_date_year9$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year9$begin_date_month$begin_date_day&end_date=$end_date_year9$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1930s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1930's:" '\t' $results1930s  '\n'
 
 # 1940's 
-requestUrl9="$baseurl?begin_date=$begin_date_year10$begin_date_month$begin_date_day&end_date=$end_date_year10$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year10$begin_date_month$begin_date_day&end_date=$end_date_year10$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1940h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1940's:" '\t' $results1940h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year10$begin_date_month$begin_date_day&end_date=$end_date_year10$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year10$begin_date_month$begin_date_day&end_date=$end_date_year10$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1940s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1940's:" '\t' $results1940s  '\n'
 
 # 1950's 
-requestUrl9="$baseurl?begin_date=$begin_date_year11$begin_date_month$begin_date_day&end_date=$end_date_year11$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year11$begin_date_month$begin_date_day&end_date=$end_date_year11$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1950h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1950's:" '\t' $results1950h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year11$begin_date_month$begin_date_day&end_date=$end_date_year11$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year11$begin_date_month$begin_date_day&end_date=$end_date_year11$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1950s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1950's:" '\t' $results1950s  '\n'
 
 # 1960's 
-requestUrl9="$baseurl?begin_date=$begin_date_year12$begin_date_month$begin_date_day&end_date=$end_date_year12$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year12$begin_date_month$begin_date_day&end_date=$end_date_year12$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1960h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1960's:" '\t' $results1960h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year12$begin_date_month$begin_date_day&end_date=$end_date_year12$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year12$begin_date_month$begin_date_day&end_date=$end_date_year12$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1960s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1960's:" '\t' $results1960s  '\n'
 
 # 1970's 
-requestUrl9="$baseurl?begin_date=$begin_date_year13$begin_date_month$begin_date_day&end_date=$end_date_year13$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year13$begin_date_month$begin_date_day&end_date=$end_date_year13$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1970h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1970's:" '\t' $results1970h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year13$begin_date_month$begin_date_day&end_date=$end_date_year13$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year13$begin_date_month$begin_date_day&end_date=$end_date_year13$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1970s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1970's:" '\t' $results1970s  '\n'
 
 # 1980's 
-requestUrl9="$baseurl?begin_date=$begin_date_year14$begin_date_month$begin_date_day&end_date=$end_date_year14$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year14$begin_date_month$begin_date_day&end_date=$end_date_year14$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1980h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1980's:" '\t' $results1980h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year14$begin_date_month$begin_date_day&end_date=$end_date_year14$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year14$begin_date_month$begin_date_day&end_date=$end_date_year14$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1980s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1980's:" '\t' $results1980s  '\n'
 
 # 1990's 
-requestUrl9="$baseurl?begin_date=$begin_date_year15$begin_date_month$begin_date_day&end_date=$end_date_year15$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year15$begin_date_month$begin_date_day&end_date=$end_date_year15$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results1990h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1990's:" '\t' $results1990h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year15$begin_date_month$begin_date_day&end_date=$end_date_year15$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year15$begin_date_month$begin_date_day&end_date=$end_date_year15$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results1990s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 1990's:" '\t' $results1990s  '\n'
 
 # 2000's 
-requestUrl9="$baseurl?begin_date=$begin_date_year16$begin_date_month$begin_date_day&end_date=$end_date_year16$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query1"
+requestUrl9="$baseurl?begin_date=$begin_date_year16$begin_date_month$begin_date_day&end_date=$end_date_year16$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1"
 results2000h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 2000's:" '\t' $results2000h
 
-requestUrl10="$baseurl?begin_date=$begin_date_year16$begin_date_month$begin_date_day&end_date=$end_date_year16$end_date_month$end_date_day&api-key=$key&page=$page&fq=$query2"
+requestUrl10="$baseurl?begin_date=$begin_date_year16$begin_date_month$begin_date_day&end_date=$end_date_year16$end_date_month$end_date_day&api-key=$key&page=$page&q=$query2"
 results2000s=`curl -s $requestUrl10 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query2 "articles in the 2000's:" '\t' $results2000s
 
