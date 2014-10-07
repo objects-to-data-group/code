@@ -266,7 +266,7 @@ echo '<html>
         ]);
 
         var options = {
-          title: '\'''$query1 vs. $query2 in The New York Times''\'',
+          title: '\'''Number of $query1 vs. $query2 articles in The New York Times''\'',
           curveType: '\''function'\'',
           legend: { position: '\''bottom'\'' }
         };
