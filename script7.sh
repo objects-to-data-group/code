@@ -50,7 +50,7 @@ end_date_year16="2009"
 page=0
 
 # Establish the specific URL based on the pre-defined variables using query1
-requestUrl="$baseurl?fq=$query1&api-key=$key&page=$page"
+requestUrl="$baseurl?q=$query1&api-key=$key&page=$page"
 
 # Filter the number of hits from the results (this part of the code is still a bit messy)
 results=`curl -s $requestUrl | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
@@ -59,7 +59,7 @@ results=`curl -s $requestUrl | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in database:" '\t' $results
 
 # Build a second URL that does the same for query2
-requestUrl2="$baseurl?fq=$query2&api-key=$key&page=$page"
+requestUrl2="$baseurl?q=$query2&api-key=$key&page=$page"
 
 # Filter the number of hits from the 2nd results
 results2=`curl -s $requestUrl2 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
