@@ -1,3 +1,17 @@
+echo -e "Month:
+January
+February    
+March   
+April   
+May 
+June    
+July    
+August  
+September   
+October 
+November    
+December" > months.txt
+
 #use AWK to label all data between tabs as a field
 #check the 2nd and 8th field for the term "Front Page"
 #if a 'hit' is found, print the 1st field of that
