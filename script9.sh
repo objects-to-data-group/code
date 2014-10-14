@@ -6,7 +6,7 @@
 parallel -j2 --progress --delay 0.01 --results effinresults "curl -sL "\
 "'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=humanities+decay'"\
 "'&begin_date={1}0101&end_date={1}1231&page={2}&api-key='"\
-"'3f743a7b1cd12f80d497931f760e6a9b%3A19%3A69971428'" ::: {1859..1859} ::: {0..99} > /dev/null
+"'insert key'" ::: {1859..1859} ::: {0..99} > /dev/null
 # install tree -> Terminal: brew install tree
 # lets look at the beautifull file tree:
 tree effinresults | head
