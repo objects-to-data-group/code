@@ -53,6 +53,9 @@ open http://cleverdon.hum.uva.nl/marijn/OtD/nytimes/ && \
 # lets point the path towards the desktop (MAC OS X) and create a directory named newyorktimesdatasets
 mkdir ~/$USER_NAME/Desktop/newyorktimesdatasets && \
 
+# copy code-master directory to new directory.
+cp -R ~/$USER_NAME/Downloads/code-master ~/$USER_NAME/Desktop/newyorktimesdatasets && \
+
 # direct the path towards the directory named newyorktimesdatasets
 cd ~/$USER_NAME/Desktop/newyorktimesdatasets  && \
 
