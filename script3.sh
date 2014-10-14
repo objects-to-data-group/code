@@ -54,5 +54,6 @@ rm artikelen_per_maand.txt
 rm overzicht_maanden.txt
 rm top_artikelen_per_maand.txt
 rm overzicht_top_maanden.txt
+rm months.txt
 
 #ik zag je kijken! 
