@@ -8,13 +8,15 @@ cat nytimes_humanities_tabbed.csv | awk -F '\t' '{if ($2 ~ "Front Page" || $8 ~ 
 paste artikelen_per_decennium.txt voorpagina_artikelen_per_decennium.txt > artikelen_berekening.txt
 
 # Calculate percentage of front page articles by dividing number of front page articles by total number of articles in the previously created text file. Paste results into a new text file.
-cat artikelen_berekening.txt | awk -F '\t' '{printf"%2.1f\n",($3/$1*100)"%"}' | awk '{print $1,"%"}' > percentage_voorpagina_artikelen.txt
+cat artikelen_berekening.txt | awk -F '\t' '{printf"%2.1f\n",($3/$1*100)"%"}' | awk '{print $1,"%"}' > percentage_voorpagina_artikelen1.txt
 
 # Show an explanation of output (create legenda):
 echo -e "art\tdecade\tfront\t"
 
 # Create output by pasting the previously created text files
-paste artikelen_per_decennium.txt voorpagina_artikelen_per_decennium.txt percentage_voorpagina_artikelen.txt
+paste artikelen_per_decennium.txt voorpagina_artikelen_per_decennium.txt percentage_voorpagina_artikelen1.txt
+
+cat percentage_voorpagina_artikelen1.txt | sed 's/,/\./g' > percentage_voorpagina_artikelen.txt
 
 result1=$(cat percentage_voorpagina_artikelen.txt | awk 'NR >= 1 && NR <= 1' | sed 's/%//')
 result2=$(cat percentage_voorpagina_artikelen.txt | awk 'NR >= 2 && NR <= 2' | sed 's/%//')
@@ -45,13 +47,15 @@ cat nytimes_humanities_tabbed.csv | awk -F '\t' '{if ($2 ~ "Front Page" || $8 ~ 
 paste artikelen_per_maand.txt voorpagina_artikelen_per_maand.txt > artikelen_berekening.txt
 
 # Calculate percentage of front page articles by dividing number of front page articles by total number of articles in the previously created text file. Paste results into a new text file.
-cat artikelen_berekening.txt | awk -F '\t' '{printf"%2.1f\n",($3/$1*100)}' | awk '{print $1,"%"}' > percentage_voorpagina_artikelen.txt
+cat artikelen_berekening.txt | awk -F '\t' '{printf"%2.1f\n",($3/$1*100)}' | awk '{print $1,"%"}' > percentage_voorpagina_artikelen1.txt
 
 # Show an explanation of output (create legenda):
 echo -e "art\tmonth\tfront\t"
 
 # Create output by pasting the previously created text files
-paste artikelen_per_maand.txt voorpagina_artikelen_per_maand.txt percentage_voorpagina_artikelen.txt
+paste artikelen_per_maand.txt voorpagina_artikelen_per_maand.txt percentage_voorpagina_artikelen1.txt
+
+cat percentage_voorpagina_artikelen1.txt | sed 's/,/\./g' > percentage_voorpagina_artikelen.txt
 
 result17=$(cat percentage_voorpagina_artikelen.txt | awk 'NR >= 1 && NR <= 1' | sed 's/%//')
 result18=$(cat percentage_voorpagina_artikelen.txt | awk 'NR >= 2 && NR <= 2' | sed 's/%//')
@@ -72,21 +76,21 @@ echo ' '
 cat nytimes_humanities_tabbed.csv | awk -F '\t' '{print $1}' | grep - | sed -e 's/.//11g' | sed -e 's/.*-//' | sort | uniq -c | awk '{print $1 "\t" $2}' > artikelen_per_dag.txt
 
 # Print number of Front-page-articles with New York Times as a source (the dataset only contains Front-page-articles from the New York Times), and give a total count per day of the month.  Paste results into a text file.
-cat nytimes_humanities_tabbed.csv | awk -F '\t' '{if ($2 ~ "Front Page" || $8 ~ "Front Page") print $1}' | sed -e 's/.//11g' | sed -e 's/.*-//' | sort | uniq -c | awk '{print $1}' > voorpagina_artikelen_per_dag.txt
+cat nytimes_humanities_tabbed.csv | awk -F '\t' '{if ($2 ~ "Front Page" || $8 ~ "Front Page") print $1}' | sed -e 's/....-..-//' | sed -e 's/T..:..:..Z//' | sort | uniq -c | awk '{print $1}' > voorpagina_artikelen_per_dag.txt
 
 # Combine the previously created text files into one new text file.
 paste artikelen_per_dag.txt voorpagina_artikelen_per_dag.txt > artikelen_berekening.txt
 
 # Calculate percentage of front page articles by dividing number of front page articles by total number of articles in the previously created text file. Paste results into a new text file.
-cat artikelen_berekening.txt | awk -F '\t' '{printf"%2.1f\n",($3/$1*100)"%"}' | awk '{print $1,"%"}' > percentage_voorpagina_artikelen.txt
+cat artikelen_berekening.txt | awk -F '\t' '{printf"%2.1f\n",($3/$1*100)"%"}' | awk '{print $1,"%"}' > percentage_voorpagina_artikelen1.txt
 
 # Show an explanation of output (create legenda):
-echo -e "art\tday\tfront\tperc"
+echo -e "art\tday\tfront\t"
 
 # Create output by pasting the previously created text files
-paste artikelen_per_dag.txt voorpagina_artikelen_per_dag.txt percentage_voorpagina_artikelen.txt
+paste artikelen_per_dag.txt voorpagina_artikelen_per_dag.txt percentage_voorpagina_artikelen1.txt
 
-
+cat percentage_voorpagina_artikelen1.txt | sed 's/,/\./g' > percentage_voorpagina_artikelen.txt
 
 result29=$(cat percentage_voorpagina_artikelen.txt | awk 'NR >= 1 && NR <= 1' | sed 's/%//')
 result30=$(cat percentage_voorpagina_artikelen.txt | awk 'NR >= 2 && NR <= 2' | sed 's/%//')
@@ -288,3 +292,4 @@ rm voorpagina_artikelen_per_maand.txt
 rm artikelen_per_dag.txt
 rm voorpagina_artikelen_per_dag.txt
 rm percentage_voorpagina_artikelen.txt
+rm percentage_voorpagina_artikelen1.txt
