@@ -289,7 +289,7 @@ kill "$(echo -e $ola)"
 
 rm t1.txt
 
-echo -e "\n" "Allright we'll let it live for now. Continuing..."
+echo -e "\n" "Oops, we did in fact just kill it... (see script)"
 
 sleep 4.0
 
