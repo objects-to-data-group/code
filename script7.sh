@@ -266,6 +266,7 @@ requestUrl9="$baseurl?begin_date=$begin_date_year10$begin_date_month$begin_date_
 results1940h=`curl -s $requestUrl9 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 echo -e $query1 "articles in the 1940's:" '\t' $results1940h
 
+# integrate a joke
 echo -e "\n" "Experiencing some problems.." "\n" "chasing the cat..."
 
 sleep 4.0
@@ -278,9 +279,19 @@ open http://www.simonlovell.co.uk/wp-content/uploads/2013/02/save-kitten.jpg
 
 sleep 10.0
 
+ps aux | grep -i firefox | awk '{print $2}' > t1.txt
+
+# the joke is getting a bit complicated since SED won't work via a direct terminal command, it messes up the process-number.
+# so we have to isolate the proces number by catching it in a textfile and extracting it with SED from there
+ola="$(cat t1.txt | sed 1q)"
+
+kill "$(echo -e $ola)"
+
+rm t1.txt
+
 echo -e "\n" "Allright we'll let it live for now. Continuing..."
 
-sleep 2.0
+sleep 4.0
 
 # ADD-ON (Sjoerd)
 requestUrl38="$baseurl?begin_date=$begin_date_year10$begin_date_month$begin_date_day&end_date=$end_date_year10$end_date_month$end_date_day&api-key=$key&page=$page&q=$query1&fq=$field:%28%22$field_query1%22%29"
