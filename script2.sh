@@ -73,7 +73,7 @@ result28=$(cat percentage_voorpagina_artikelen.txt | awk 'NR >= 12 && NR <= 12' 
 echo ' '
 
 # Print number of news-items with New York Times as a source, and give a total count per day of the month. Paste results into a text file.
-cat nytimes_humanities_tabbed.csv | awk -F '\t' '{print $1}' | grep - | sed -e 's/.//11g' | sed -e 's/.*-//' | sort | uniq -c | awk '{print $1 "\t" $2}' > artikelen_per_dag.txt
+cat nytimes_humanities_tabbed.csv | awk -F '\t' '{print $1}' | grep - | sed -e's/....-..-//' | sed 's/T..:..:..Z//' | sort | uniq -c | awk '{print $1 "\t" $2}' > artikelen_per_dag.txt
 
 # Print number of Front-page-articles with New York Times as a source (the dataset only contains Front-page-articles from the New York Times), and give a total count per day of the month.  Paste results into a text file.
 cat nytimes_humanities_tabbed.csv | awk -F '\t' '{if ($2 ~ "Front Page" || $8 ~ "Front Page") print $1}' | sed -e 's/....-..-//' | sed -e 's/T..:..:..Z//' | sort | uniq -c | awk '{print $1}' > voorpagina_artikelen_per_dag.txt
