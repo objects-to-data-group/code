@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# this script is meant to retrieve data from the API and write it into a .JSON file that will serve as input to script 7
+# If 'query 1' in script 7 is set to be similar to the query-term in this script, it should work. 
+
 baseurl="http://api.nytimes.com/svc/search/v2/articlesearch.json"
 
 key=""
