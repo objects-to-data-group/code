@@ -15,7 +15,7 @@
 #------------------------------------------------------------------------------#
 # Authors : S. Bergmans, J. Lam, S. Wisselink, C. Sleutel and W. Nanninga
 # Date : 24.09.2014
-  VERSION="0.1"
+  VERSION="3.0"
 #------------------------------------------------------------------------------#
 
 #set -e # End the script if any statement returns a non-true return value
