@@ -53,9 +53,6 @@ open http://cleverdon.hum.uva.nl/marijn/OtD/nytimes/ && \
 # lets point the path towards the desktop (MAC OS X) and create a directory named newyorktimesdatasets
 mkdir ~/$USER_NAME/Desktop/newyorktimesdatasets && \
 
-# copy code-master directory to new directory.
-cp -R ~/$USER_NAME/Downloads/code-master ~/$USER_NAME/Desktop/newyorktimesdatasets && \
-
 # direct the path towards the directory named newyorktimesdatasets
 cd ~/$USER_NAME/Desktop/newyorktimesdatasets  && \
 
@@ -77,5 +74,17 @@ tar -zxvf nytimes_web_data.tar.gz && \
 
 # remove the tarball from the directory
 rm nytimes_web_data.tar.gz && \
+
+# copy the science.json from Dropbox
+curl https://dl.dropboxusercontent.com/u/34142124/Science.json.zip > Science.json.zip && \
+
+# unzip the file
+unzip Science.json.gz && \
+
+# remove the Science.json.zip file
+rm Science.json.gz && \
+
+# find and copy the scripts from the code  directory to the nytimesdatasets directory.
+cp -R ~/$USER_NAME/Downloads/code/. ~/$USER_NAME/Desktop/newyorktimesdatasets/
 
 exit 0
