@@ -47,9 +47,6 @@ This script will;
 "
 
 
-# open the users browser and navigate to the URI
-open http://cleverdon.hum.uva.nl/marijn/OtD/nytimes/ && \
-
 # lets point the path towards the desktop (MAC OS X) and create a directory named newyorktimesdatasets
 mkdir ~/$USER_NAME/Desktop/newyorktimesdatasets && \
 
@@ -79,12 +76,12 @@ rm nytimes_web_data.tar.gz && \
 curl https://dl.dropboxusercontent.com/u/34142124/Science.json.zip > Science.json.zip && \
 
 # unzip the file
-unzip Science.json.gz && \
+unzip Science.json.zip && \
 
 # remove the Science.json.zip file
-rm Science.json.gz && \
+rm Science.json.zip && \
 
 # find and copy the scripts from the code  directory to the nytimesdatasets directory.
-cp -R ~/$USER_NAME/Downloads/code/. ~/$USER_NAME/Desktop/newyorktimesdatasets/
+cp -R ~/$USER_NAME/Downloads/code-master/. ~/$USER_NAME/Desktop/newyorktimesdatasets/
 
 exit 0
