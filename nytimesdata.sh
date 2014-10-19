@@ -84,4 +84,8 @@ rm Science.json.zip && \
 # find and copy the scripts from the code  directory to the nytimesdatasets directory.
 cp -R ~/$USER_NAME/Downloads/code-master/. ~/$USER_NAME/Desktop/newyorktimesdatasets/
 
+#remove left-over
+rm ~/$USER_NAME/Downloads/code-master/
+rm ~/$USER_NAME/Downloads/code-master.zip
+
 exit 0
