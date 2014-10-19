@@ -35,6 +35,6 @@ If everything went according to plan you should end up with the following files:
 
 In order to proceed and verify our findings it is strongly suggested to read Objects_to_Data_Our_Findings.pdf. Objects_to_Data_Our_Findings.pdf is (if everything went as planned) available in the newyortimesdata directory that is located on your desktop.
 
-TITEL describes our main research question, the methodology and the results. In order to reproduce our results you can run the various scripts that we have made. These scripts are named Script1.sh, Script2.sh, Script3.sh, Script4.sh, Script5.sh, Script6.sh, Script7.sh, Script8.sh and Script9.sh. All of these scripts are different steps that will produce the results that are needed to output the different bar- and line graphs.
+Objects_to_Data_Our_Findings.pdf describes our main research question, the methodology and the results. In order to reproduce our results you can run the various scripts that we have made. These scripts are named Script1.sh, Script2.sh, Script3.sh, Script4.sh, Script5.sh, Script6.sh, Script7.sh, Script8.sh and Script9.sh. All of these scripts are different steps that will produce the results that are needed to output the different bar- and line graphs.
 
 In addition, on our Github groups page https://github.com/objects-to-data-group/ you can also find the "old-unused-scrips" repository that holds all of the scripts and files that where also created but discarded before the end result. 
