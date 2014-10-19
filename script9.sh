@@ -1,4 +1,4 @@
-# Desfription (added later): this script is meant to do the same thing as script 7 & 8 combined, but via another way, 
+# Description (added later): this script is meant to do the same thing as script 7 & 8 combined, but via another way, 
 # using programs like JQ, tree and parallel. It was meant to be faster and more easy to adapt to a different research question.
 
 # 1: install parallell -> Terminal: brew install parallel
