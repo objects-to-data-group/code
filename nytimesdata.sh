@@ -85,7 +85,7 @@ rm Science.json.zip && \
 cp -R ~/$USER_NAME/Downloads/code-master/. ~/$USER_NAME/Desktop/newyorktimesdatasets/
 
 #remove left-over
-rm ~/$USER_NAME/Downloads/code-master/
+rm -rf ~/$USER_NAME/Downloads/code-master/
 rm ~/$USER_NAME/Downloads/code-master.zip
 
 exit 0
